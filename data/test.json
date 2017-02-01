@@ -1,0 +1,34 @@
+{
+  "train": {
+    "type": "SNCF TVG",
+    "num_coaches": 7,
+    "mass": 415000.0,
+    "mass_per_axle": 29642.86,
+    "max_acceleration": 1.0,
+    "max_braking": 0.35,
+    "length": 200.0
+  },
+  "num_segments": 3,
+  "segments": [
+    {
+      "id": 0,
+      "station": true,
+      "arrival_time": 0.0,
+      "stop_time": 0.0
+    },
+    {
+      "id": 1,
+      "station": false,
+      "length": 10000.0,
+      "slope": 0.0,
+      "curve": 0.0,
+      "speed_limit": 30.0
+    },
+    {
+      "id": 2,
+      "station": true,
+      "arrival_time": 720.0,
+      "stop_time": 0.0
+    }
+  ]
+}
