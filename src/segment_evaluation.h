@@ -29,7 +29,7 @@
 #define DRIVING_PHASES          4
 
 /**
- * Data that goes as input to the evaluation and describe the state of the run up to the
+ * Data that goes as input to the evaluation and describes the state of the run up to the
  * current segment, and the switching points.
  */
 typedef struct EvaluationInput {

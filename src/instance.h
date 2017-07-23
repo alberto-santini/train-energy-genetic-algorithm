@@ -23,7 +23,7 @@ typedef struct Instance {
  * @param filename  The json file name
  * @return          The newly created instance
  */
-Instance read_instance(const char const* filename);
+Instance read_instance(const char *const filename);
 
 /**
  * Frees memory for an instance.

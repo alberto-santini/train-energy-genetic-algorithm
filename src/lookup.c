@@ -279,6 +279,15 @@ float get_max_braking_speed(const Lookup* l, size_t segment, size_t speed, size_
 float get_max_braking_position(const Lookup* l, size_t segment, size_t speed, size_t distance) {
     return lookup_table_element(l, l->max_braking.position, segment, speed, distance);
 }
+float get_cruising_time(size_t speed, size_t distance) {
+    return (DISTANCE_STEP * distance) / (SPEED_STEP * speed);
+}
+float get_cruising_speed(size_t speed, size_t distance) {
+    return SPEED_STEP * speed;
+}
+float get_cruising_position(size_t speed, size_t distance) {
+    return DISTANCE_STEP * distance;
+}
 
 /*
  * api-method

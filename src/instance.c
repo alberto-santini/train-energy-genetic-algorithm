@@ -12,7 +12,7 @@
 /*
  * api-method
  */
-Instance read_instance(const char const* filename) {
+Instance read_instance(const char *const filename) {
     FILE* fd;
     fd = fopen(filename, "r");
 

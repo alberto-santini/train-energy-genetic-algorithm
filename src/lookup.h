@@ -121,6 +121,14 @@ float get_max_braking_time(const Lookup* l, size_t segment, size_t speed, size_t
 float get_max_braking_speed(const Lookup* l, size_t segment, size_t speed, size_t distance);
 float get_max_braking_position(const Lookup* l, size_t segment, size_t speed, size_t distance);
 
+/*
+ * For cruising, the calculations are so simple, that no look-up table is needed (uniform motion).
+ * Rather, the exact values are returned.
+ */
+float get_cruising_time(size_t speed, size_t distance);
+float get_cruising_speed(size_t speed, size_t distance);
+float get_cruising_position(size_t speed, size_t distance);
+
 /**
  * Initialises the lookup tables
  * @param instance  The instance we are solving
